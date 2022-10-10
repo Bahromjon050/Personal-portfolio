@@ -103,18 +103,54 @@
             justify-content: center;
             background: #21201E;
             border-radius: 10px;
+
+            svg {
+                width: 45px;
+                height: 45px;
+            }
         }
     }
 
+}
+
+.tel_h5 {
+    font-weight: 400;
+    font-size: 13.2738px;
+    line-height: 19px;
+    letter-spacing: -0.331985px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .all_padding {
     padding: 0 100px;
 }
 
+.box {
+    text-align: center;
 
+    h3 {
+        font-size: 18px;
+        margin: 20px 0 14px;
+    }
 
+    .tel_h5 {
+        font-size: large;
+    }
 
+    // color: #ED9902;
+}
+
+.do_you {
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.at {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 26px;
+    font-weight: 700;
+}
 
 
 

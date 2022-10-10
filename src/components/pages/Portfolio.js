@@ -6,8 +6,9 @@ import { Header } from "./All";
 const Portfolio = () => {
   const obj = {
     span: "Portfolio",
-    name: "My",
-    des: `Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+    name: "Mening",
+    des: `
+    Rutrum cursus varius ullamcorper venenatis faucibus lobortis
     turpis dignissim. Commodo pellentesque tristique aliquet    
     turpis. Morbi risus imperdiet`,
   };

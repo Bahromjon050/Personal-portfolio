@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MengaYozish = () => {
   const obj = {
@@ -42,6 +43,48 @@ const MengaYozish = () => {
     <>
       <section className="services all_padding">
         <Header data={obj} />
+
+        {/* <h1 className="tac do_you mt-5">Do you have any questions</h1>
+        <h3 className="tac mt-1 mb-7 at">I'm at your service</h3> */}
+        <div
+          className="df fw g-6 jcc"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <a href="">
+            <div className="box">
+              <LazyLoadImage
+                src="./img/tel.svg"
+                style={{ width: "27px", height: "27px" }}
+                effect="blur"
+              />
+              <h3 className="all_h3">Call Us On</h3>
+              <h5 className="tel_h5">+998 90 275 39 09</h5>
+            </div>
+          </a>
+          <a href="https://t.me/uitcfamily">
+            <div className="box">
+              <LazyLoadImage
+                src="./img/email.svg"
+                style={{ width: "27px", height: "27px" }}
+                effect="blur"
+              />
+              <h3 className="all_h3">Office</h3>
+              <h5 className="tel_h5">UNITED IT akademiya</h5>
+            </div>
+          </a>
+          <a href="https://mail.google.com/mail/u/0/#inbox">
+            <div className="box">
+              <LazyLoadImage
+                src="./img/location.svg"
+                style={{ width: "27px", height: "27px" }}
+                effect="blur"
+              />
+              <h3 className="all_h3">Email</h3>
+              <h5 className="tel_h5">bahromjonsobitxanov468@gmial.com</h5>
+            </div>
+          </a>
+        </div>
         <div className="cards_team" data-aos="fade-up" data-aos-duration="800">
           <form className="mt-2" onSubmit={handleSubmit(onSubmit)}>
             <input
@@ -86,6 +129,7 @@ const MengaYozish = () => {
           </form>
         </div>
       </section>
+      <div className="mt_close"></div>
     </>
   );
 };

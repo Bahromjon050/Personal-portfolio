@@ -1,5 +1,5 @@
 import "./App.css";
-import './components/style/Sass.css'
+import "./components/style/Sass.css";
 import Customers from "./components/pages/Customers";
 import Home from "./components/pages/Home";
 import MengaYozish from "./components/pages/MengaYozish";
@@ -12,45 +12,54 @@ import {
   NavLink,
 } from "react-router-dom";
 import AOS from "aos";
-AOS.init()
+import { useState } from "react";
+AOS.init();
 
 function App() {
+  const [btn, setBtn] = useState(false);
   return (
     <>
       <Router>
         <nav className="nav_bar df aic jcsb">
-          <div className="logo">
+          <div className="logo" onClick={() => setBtn(false)}>
             <NavLink to="/">
               B. Sobitxanov<span>.</span>
             </NavLink>
           </div>
-          <ul className="nav_item">
-            <li className="nav_link ntch">
+          <ul className={btn ? "nav_item activ" : "nav_item"}>
+            <li onClick={() => setBtn(false)} className="nav_link ntch">
               <NavLink activclassname="selected" to="/">
                 About
               </NavLink>
             </li>
-            <li className="nav_link">
+            <li onClick={() => setBtn(false)} className="nav_link">
               <NavLink activclassname="selected" to="/service">
                 Services
               </NavLink>
             </li>
-            <li className="nav_link">
+            <li onClick={() => setBtn(false)} className="nav_link">
               <NavLink activclassname="selected" to="/portfolio">
                 Portfolio
               </NavLink>
             </li>
-            {/* <li className="nav_link">
+            {/* <li onClick={() => setBtn(false)} className="nav_link">
               <NavLink activclassname="selected" to="/customers">
                 Team
               </NavLink>
             </li> */}
-            <li className="nav_link">
+            <li onClick={() => setBtn(false)} className="nav_link">
               <NavLink activclassname="selected" to="/mengayozish">
                 Contact
               </NavLink>
             </li>
           </ul>
+          <div
+            className={btn ? "nav_btn activ" : "nav_btn"}
+            onClick={() => setBtn(!btn)}
+          >
+            <span className="span_nav"></span>
+            <span className="span_nav"></span>
+          </div>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />

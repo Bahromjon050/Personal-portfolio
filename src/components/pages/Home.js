@@ -1,8 +1,10 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const path = useNavigate();
   return (
     <>
       <div className="web df aic jcsa fw mt-7 all_padding">
@@ -10,13 +12,13 @@ const Home = () => {
           <h1>
             Men <span className="span_color">Sobitxanov B.</span>
           </h1>
-          <h3>Web Designer / UI Designer / Graphic designer</h3>
+          <h3>Veb dasturchi / foydalanuvchi interfeysi</h3>
           <p>
-            Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis{" "}
-            <br /> dignissim. Commodo pellentesque tristique aliquet turpis.
-            Morbi risus <br /> imperdiet
+            Assalomu alaykum men Front-end dasturchiman. 2022-yil 25-yanvarda{" "}
+            <br /> IT ni o'rgana boshladim va 1-avgustda tamomladim.
+            <br /> Hozirda UITC kompaniyasida stajyor man.
           </p>
-          <button className="btn">Explore My Work</button>
+          <button className="btn" onClick={() => path("/portfolio")}>Qilgan ishlarim</button>
         </div>
         <div
           className="web_col_position"

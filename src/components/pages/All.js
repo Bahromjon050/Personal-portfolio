@@ -8,7 +8,7 @@ export const Header = ({ data, x, setX }) => {
           {data.name} <span className="span_color">{data.span}</span>
         </h1>
         <p className="all_p">
-          {data.des.slice(0, 60)} <br /> {data.des.slice(61, 122)} <br />{" "}
+          {data.des.slice(0, 62)} <br /> {data.des.slice(62, 122)} <br />{" "}
           {data.des.slice(123, data.des.length)}
         </p>
       </header>

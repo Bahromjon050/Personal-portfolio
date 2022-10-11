@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Header } from "./All";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const MengaYozish = () => {
   const obj = {
@@ -51,7 +52,7 @@ const MengaYozish = () => {
           data-aos="fade-up"
           data-aos-duration="800"
         >
-          <a href="">
+          <a href="tel:+998902753909" target="blank">
             <div className="box">
               <LazyLoadImage
                 src="./img/tel.svg"
@@ -62,10 +63,10 @@ const MengaYozish = () => {
               <h5 className="tel_h5">+998 90 275 39 09</h5>
             </div>
           </a>
-          <a href="https://t.me/uitcfamily">
+          <a href="https://goo.gl/maps/3kTNkFTvZiqC9N4Z6" target="blank">
             <div className="box">
               <LazyLoadImage
-                src="./img/email.svg"
+                src="./img/location.svg"
                 style={{ width: "27px", height: "27px" }}
                 effect="blur"
               />
@@ -73,10 +74,10 @@ const MengaYozish = () => {
               <h5 className="tel_h5">UNITED IT akademiya</h5>
             </div>
           </a>
-          <a href="https://mail.google.com/mail/u/0/#inbox">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">
             <div className="box">
               <LazyLoadImage
-                src="./img/location.svg"
+                src="./img/email.svg"
                 style={{ width: "27px", height: "27px" }}
                 effect="blur"
               />

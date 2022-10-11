@@ -1,6 +1,6 @@
 import React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import "react-lazy-load-image-component/src/effects/blur.css";
 import { Header } from "./All";
 
 const Services = () => {
@@ -301,9 +301,11 @@ const Services = () => {
     },
   ];
   const obj = {
-    span: "xizmatlarim",
-    name: "Mening",
-    des: `Men bilgan texnologiya HTML, CSS, Sass, Bootstrap, JavaScript, React, Redux, Redux Toolkit `,
+    span: "",
+    name: "Texnologiya",
+    des: `Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+    turpis dignissim. Commodo pellentesque tristique aliquet turpis.
+    Morbi risus imperdiet`,
   };
   return (
     <>

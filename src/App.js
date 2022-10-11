@@ -13,63 +13,63 @@ import {
 } from "react-router-dom";
 import AOS from "aos";
 import { useState } from "react";
+import Error from "./components/pages/Error";
 AOS.init();
 
 function App() {
   const [btn, setBtn] = useState(false);
   return (
-    <>
-      <Router>
-        <nav className="nav_bar df aic jcsb">
-          <div className="logo" onClick={() => setBtn(false)}>
-            <NavLink to="/">
-              B. Sobitxanov<span>.</span>
+    <Router>
+      <nav className="nav_bar df aic jcsb">
+        <div className="logo" onClick={() => setBtn(false)}>
+          <NavLink to="/">
+            B. Sobitxanov<span>.</span>
+          </NavLink>
+        </div>
+        <ul className={btn ? "nav_item activ" : "nav_item"}>
+          <li onClick={() => setBtn(false)} className="nav_link">
+            <NavLink activclassname="selected" to="/">
+              About
             </NavLink>
-          </div>
-          <ul className={btn ? "nav_item activ" : "nav_item"}>
-            <li onClick={() => setBtn(false)} className="nav_link ntch">
-              <NavLink activclassname="selected" to="/">
-                About
-              </NavLink>
-            </li>
-            <li onClick={() => setBtn(false)} className="nav_link">
-              <NavLink activclassname="selected" to="/service">
-                Services
-              </NavLink>
-            </li>
-            <li onClick={() => setBtn(false)} className="nav_link">
-              <NavLink activclassname="selected" to="/portfolio">
-                Portfolio
-              </NavLink>
-            </li>
-            {/* <li onClick={() => setBtn(false)} className="nav_link">
+          </li>
+          <li onClick={() => setBtn(false)} className="nav_link">
+            <NavLink activclassname="selected" to="/service">
+              Texnologiya
+            </NavLink>
+          </li>
+          <li onClick={() => setBtn(false)} className="nav_link">
+            <NavLink activclassname="selected" to="/portfolio">
+              Portfolio
+            </NavLink>
+          </li>
+          {/* <li onClick={() => setBtn(false)} className="nav_link">
               <NavLink activclassname="selected" to="/customers">
                 Team
               </NavLink>
             </li> */}
-            <li onClick={() => setBtn(false)} className="nav_link">
-              <NavLink activclassname="selected" to="/mengayozish">
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-          <div
-            className={btn ? "nav_btn activ" : "nav_btn"}
-            onClick={() => setBtn(!btn)}
-          >
-            <span className="span_nav"></span>
-            <span className="span_nav"></span>
-          </div>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/customers" element={<Customers />} />
-          <Route path="/mengayozish" element={<MengaYozish />} />
-        </Routes>
-      </Router>
-    </>
+          <li onClick={() => setBtn(false)} className="nav_link">
+            <NavLink activclassname="selected" to="/mengayozish">
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+        <div
+          className={btn ? "nav_btn activ" : "nav_btn"}
+          onClick={() => setBtn(!btn)}
+        >
+          <span className="span_nav"></span>
+          <span className="span_nav"></span>
+        </div>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/service" element={<Services />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/mengayozish" element={<MengaYozish />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -18,119 +18,119 @@ const Portfolio = () => {
       link: "https://admin050.netlify.app/",
       aos: 150,
       src: "./img/port1.png",
-      git: "",
+      git: "https://github.com/Bahromjon050/AdminSite",
     },
     {
       name: "DaCode",
       link: "http://react-portfolio-new.netlify.app/",
       aos: 250,
       src: "./img/port2.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/DataCode",
     },
     {
       name: "Safari",
       link: "https://safari-pro-redux.netlify.app/",
       aos: 100,
       src: "./img/port4.png",
-      git: "",
+      git: "https://github.com/Bahromjon050/shopping-redux",
     },
     {
       name: "Sahovat",
       link: "https://sahovat-ziyotest.netlify.app/",
       aos: 150,
       src: "./img/port5.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050",
     },
     {
       name: "Shop-javaScript",
       link: "https://shop-js.netlify.app/",
       aos: 250,
       src: "./img/port6.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/shop-js",
     },
     {
       name: "BrandName",
       link: "https://brand-name-468.netlify.app/",
       aos: 100,
       src: "./img/port7.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/BrandName",
     },
     {
       name: "Musobaqa",
       link: "https://bellashuv.netlify.app",
       aos: 100,
       src: "./img/port8.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/Bellashuv",
     },
     {
       name: "Student-CRUD",
       link: "https://bahromjon-crud.netlify.app",
       aos: 100,
       src: "./img/port9.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/Crud-javaScript",
     },
     {
       name: "Redux-shop-amaliyot",
       link: "https://coral-women.netlify.app",
       aos: 100,
       src: "./img/port11.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/redux-coral-women-shopping",
     },
     {
       name: "Amaliyot-tab.js",
       link: "https://loyiha-cards.netlify.app/",
       aos: 100,
       src: "./img/port12.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/Tab",
     },
     {
       name: "TelegramX.javaScript",
       link: "https://telegram-x.netlify.app/",
       aos: 100,
       src: "./img/port10.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/TelegramX",
     },
     {
       name: "TripGoal-animation",
       link: "https://bahrom-animations.netlify.app/",
       aos: 100,
       src: "./img/port14.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/TripGoal",
     },
     {
       name: "Kofe-shop",
       link: "https://bahrom-shopping-site.netlify.app/",
       aos: 100,
       src: "./img/port15.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/KofeSite",
     },
     {
       name: "Landing page",
       link: "https://bahromjonsobitxanov1.netlify.app/",
       aos: 100,
       src: "./img/port16.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/Landing",
     },
     {
       name: "QR code",
       link: "https://link-qr.netlify.app",
       aos: 100,
       src: "./img/port3.png",
-      git: "",
+      git: "https://github.com/Bahromjon050/Qrcode",
     },
     {
       name: "Menu-pro",
       link: "https://menu-pro-050.netlify.app",
       aos: 100,
       src: "./img/port17.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050/shop-menu",
     },
     {
-      name: "Menu-tob",
+      name: "Menu-tab",
       link: "https://menu050.netlify.app",
       aos: 100,
       src: "./img/port18.jpg",
-      git: "",
+      git: "https://github.com/Bahromjon050",
     },
   ];
   const [x, setX] = useState("");
@@ -175,7 +175,7 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="images">
-                    <a href={val.git}>
+                    <a href={val.git} target="blank">
                       <button>
                         <LazyLoadImage
                           src="./img/github.svg"
@@ -235,7 +235,7 @@ const Portfolio = () => {
                       </a>
                     </div>
                     <div className="images">
-                      <a href={val.git}>
+                      <a href={val.git} target="blank">
                         <button>
                           <LazyLoadImage
                             src="./img/github.svg"

@@ -18,7 +18,9 @@ const Home = () => {
             <br /> IT ni o'rgana boshladim va 1-avgustda tamomladim.
             <br /> Hozirda UITC kompaniyasida stajyor man.
           </p>
-          <button className="btn" onClick={() => path("/portfolio")}>Qilgan ishlarim</button>
+          <button className="btn" onClick={() => path("/portfolio")}>
+            Qilgan ishlarim
+          </button>
         </div>
         <div
           className="web_col_position"
@@ -29,7 +31,12 @@ const Home = () => {
             <LazyLoadImage src="./img/bg1.png" effect="blur" alt="Offline" />
           </div>
           <div className="images2">
-            <LazyLoadImage src="./img/bg2.png" effect="blur" alt="Offline" />
+            <LazyLoadImage
+              src="./img/personal.jpg"
+              style={{ width: "500px", height: "500px", borderRadius: "50%" }}
+              effect="blur"
+              alt="Offline"
+            />
           </div>
           <div className="absolute images3">
             <LazyLoadImage src="./img/bg3.png" effect="blur" alt="Offline" />

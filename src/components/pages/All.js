@@ -2,7 +2,7 @@ import React from "react";
 
 export const Header = ({ data, x, setX }) => {
   return (
-    <div className="df jcsb">
+    <div className="media-df df jcsb">
       <header data-aos="fade-down" data-aos-duration="800">
         <h1 className="all_h1">
           {data.name} <span className="span_color">{data.span}</span>

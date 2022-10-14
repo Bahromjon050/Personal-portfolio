@@ -173,7 +173,7 @@ const Services = () => {
           width="30"
           height="32"
           viewBox="0 0 36 32"
-          fill="none"
+          fill="none" 
           className="css-1170n61"
         >
           <path

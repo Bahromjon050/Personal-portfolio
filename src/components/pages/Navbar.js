@@ -11,6 +11,7 @@ import MengaYozish from "./MengaYozish";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
 import Error from "./Error";
+import Animation from "./Animation";
 
 const Navbar = () => {
   const [btn, setBtn] = useState(false);
@@ -87,6 +88,7 @@ const Navbar = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/mengayozish/" element={<MengaYozish />} />
+          <Route path="/anim" element={<Animation />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

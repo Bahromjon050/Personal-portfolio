@@ -9,7 +9,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const MengaYozish = () => {
   const obj = {
-    span: "bog'lanish!",
+    span: "bog'lanish",
     name: "Men bilan",
     des: `Rutrum cursus varius ullamcorper venenatis faucibus lobortis
         turpis dignissim. Commodo pellentesque tristique aliquet    
@@ -88,6 +88,7 @@ const MengaYozish = () => {
         </div>
         <div className="cards_team" data-aos="fade-up" data-aos-duration="800">
           <form className="mt-2" onSubmit={handleSubmit(onSubmit)}>
+            <h3 className="all_h3 mt-3">Menga <span className="span_color">xabar qoldirish</span></h3>
             <input
               type="text"
               {...register("fName", {

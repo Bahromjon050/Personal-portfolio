@@ -136,7 +136,7 @@ const Portfolio = () => {
   const [x, setX] = useState("");
   return (
     <>
-      <section className="services all_padding">
+      <section className="services media_service all_padding">
         <Header data={obj} setX={setX} x={x} />
         <div
           className="cards_port df aic jcc fw g-3"
@@ -154,6 +154,7 @@ const Portfolio = () => {
                 <LazyLoadImage
                   src={val.src}
                   effect="blur"
+                  className="card_port_lazy"
                   style={{ width: "363px", height: "264px" }}
                 />
                 <a
@@ -214,6 +215,7 @@ const Portfolio = () => {
                   <LazyLoadImage
                     src={val.src}
                     effect="blur"
+                    className="card_port_lazy"
                     style={{ width: "363px", height: "264px" }}
                   />
                   <a

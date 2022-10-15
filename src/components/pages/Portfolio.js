@@ -4,15 +4,14 @@ import { Header } from "./All";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Portfolio = () => {
-  const obj = {
-    span: "Portfolio",
-    name: "Mening",
-    des: `
-    Rutrum cursus varius ullamcorper venenatis faucibus lobortis
-    turpis dignissim. Commodo pellentesque tristique aliquet    
-    turpis. Morbi risus imperdiet`,
-  };
   const crud = [
+    {
+      name: "Amaliyot-toolkit",
+      link: "https://redux-toolkit050.netlify.app/",
+      aos: 100,
+      src: "./img/toolkit.png",
+      git: "https://github.com/Bahromjon050/redux-toolkit",
+    },
     {
       name: "Admin",
       link: "https://admin050.netlify.app/",
@@ -133,6 +132,14 @@ const Portfolio = () => {
       git: "https://github.com/Bahromjon050",
     },
   ];
+  const obj = {
+    span: `Portfolio { ${crud.length} }`,
+    name: "Mening",
+    des: `
+    Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+    turpis dignissim. Commodo pellentesque tristique aliquet    
+    turpis. Morbi risus imperdiet`,
+  };
   const [x, setX] = useState("");
   return (
     <>

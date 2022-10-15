@@ -12,7 +12,7 @@ export const Header = ({ data, x, setX }) => {
           {data.des.slice(123, data.des.length)}
         </p>
       </header>
-      {data.span === "Portfolio" ? (
+      {data.name === "Mening" ? (
         <div className="search">
           <input
             type="text"

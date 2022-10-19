@@ -6,6 +6,20 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Portfolio = () => {
   const crud = [
     {
+      name: "Amaliyot-Tic-react",
+      link: "https://tic-tac-toe-050.netlify.app/",
+      aos: 150,
+      src: "./img/x-o1.jpg",
+      git: "https://github.com/Bahromjon050/Tic-tac-toe",
+    },
+    {
+      name: "Amaliyot-Tic-js",
+      link: "https://x-o-050.netlify.app/",
+      aos: 250,
+      src: "./img/x-o2.jpg",
+      git: "https://github.com/Bahromjon050/Amaliyot-js",
+    },
+    {
       name: "Amaliyot-toolkit",
       link: "https://redux-toolkit050.netlify.app/",
       aos: 100,

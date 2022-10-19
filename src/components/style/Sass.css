@@ -45,7 +45,7 @@
   color: #FFFFFF;
 }
 
-.web h3 {
+.web span:nth-child(2) {
   margin-top: 24px;
   font-weight: 500;
   font-size: 18px;

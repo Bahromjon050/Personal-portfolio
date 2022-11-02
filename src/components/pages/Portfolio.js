@@ -6,6 +6,13 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Portfolio = () => {
   const crud = [
     {
+      name: "Amaliyot-Typescript",
+      link: "https://tsx-crud.netlify.app/",
+      aos: 150,
+      src: "./img/port19.png",
+      git: "https://github.com/Bahromjon050/Typescript-CRUD",
+    },
+    {
       name: "Amaliyot-Tic-react",
       link: "https://tic-tac-toe-050.netlify.app/",
       aos: 150,
@@ -158,7 +165,7 @@ const Portfolio = () => {
   return (
     <>
       <section className="services media_service all_padding">
-        <Header data={obj} setX={setX} x={x} />
+        <Header data={obj} setX={setX} x={x} crud={crud} />
         <div
           className="cards_port df aic jcc fw g-3"
           data-aos="fade-up"

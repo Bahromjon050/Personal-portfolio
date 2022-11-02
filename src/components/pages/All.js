@@ -1,6 +1,7 @@
 import React from "react";
 
-export const Header = ({ data, x, setX }) => {
+export const Header = ({ data, x, setX, crud }) => {
+  console.log(crud);
   return (
     <div className="media-df df jcsb">
       <header data-aos="fade-down" data-aos-duration="800">
@@ -16,6 +17,24 @@ export const Header = ({ data, x, setX }) => {
         <div className="search">
           <input
             type="text"
+            style={{
+              width: "50px",
+              padding: "14px 14px 14px 17px",
+              borderRight: "0",
+              borderRadius: "5px 0 0 5px",
+            }}
+            value={
+              crud.filter((val) => {
+                return (
+                  val.name.toLowerCase().indexOf(x.trim().toLowerCase()) !== -1
+                );
+              }).length
+            }
+            disabled
+          />
+          <input
+            type="text"
+            style={{ borderRadius: "0 5px 5px 0" }}
             value={x}
             placeholder="Search portfolio..."
             onChange={(e) => setX(e.target.value)}

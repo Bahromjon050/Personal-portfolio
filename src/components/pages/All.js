@@ -1,7 +1,6 @@
 import React from "react";
 
-export const Header = ({ data, x, setX, crud }) => {
-  console.log(crud);
+export const Header = ({ data, x, setX, api }) => {
   return (
     <div className="media-df df jcsb">
       <header data-aos="fade-down" data-aos-duration="800">
@@ -24,9 +23,9 @@ export const Header = ({ data, x, setX, crud }) => {
               borderRadius: "5px 0 0 5px",
             }}
             value={
-              crud.filter((val) => {
+              api?.filter((val) => {
                 return (
-                  val.name.toLowerCase().indexOf(x.trim().toLowerCase()) !== -1
+                  val._fieldsProto.name.stringValue.toLowerCase().indexOf(x.trim().toLowerCase()) !== -1
                 );
               }).length
             }

@@ -157,8 +157,9 @@ const Portfolio = () => {
   // ];
   const [api, setApi] = useState([]);
 
+  const [loading, setLoading] = useState(true);
   const obj = {
-    span: `Portfolio { ${api.length} }`,
+    span: `Portfolio  { ${!loading ? api.length : "_"} }`,
     name: "Mening",
     des: `
     Rutrum cursus varius ullamcorper venenatis faucibus lobortis
@@ -169,21 +170,25 @@ const Portfolio = () => {
   useEffect(() => {
     axios
       .get(
-        // `https://personal-portfolio-050-default-rtdb.firebaseio.com/`
         `https://v1.nocodeapi.com/bahromjon/fbsdk/xVQeXsvrnzvVLzIK/firestore/allDocuments?collectionName=portfolio`
       )
       .then((res) => {
         if (res.status === 200) {
-          setApi(res.data);
+          setApi(
+            res.data.sort(
+              (a, b) =>
+                b._fieldsProto.id.integerValue - a._fieldsProto.id.integerValue
+            )
+          );
+          setLoading(false);
         }
       })
       .catch((err) => console.log(err));
   }, []);
-  console.log(api);
   return (
     <>
       <section className="services media_service all_padding">
-        <Header data={obj} setX={setX} x={x} api={api} />
+        <Header data={obj} setX={setX} x={x} api={api} loading={loading} />
         <div
           className="cards_port df aic jcc fw g-3"
           data-aos="fade-up"

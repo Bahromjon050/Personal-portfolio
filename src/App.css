@@ -198,6 +198,16 @@ button {
   background: #383636;
 } */
 
+.positions {
+  position: relative;
+}
+
+.loading{
+  top: -10px;
+  left: 353px;
+  position: absolute;
+}
+
 @keyframes animate1 {
   0% {
     transform: rotate(0deg);
@@ -371,24 +381,31 @@ button {
   }
 }
 
-
-.typed-cursor{
+.typed-cursor {
   opacity: 1;
   animation: typedjsBlink 0.7s infinite;
   -webkit-animation: typedjsBlink 0.7s infinite;
   animation: typedjsBlink 0.7s infinite;
 }
-@keyframes typedjsBlink{
-  50% { opacity: 0.0; }
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
 }
-@-webkit-keyframes typedjsBlink{
-  0% { opacity: 1; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1; }
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.typed-fade-out{
+.typed-fade-out {
   opacity: 0;
-  transition: opacity .25s;
+  transition: opacity 0.25s;
   -webkit-animation: 0;
   animation: 0;
 }

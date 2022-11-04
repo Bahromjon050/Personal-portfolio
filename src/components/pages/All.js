@@ -1,11 +1,14 @@
 import React from "react";
 
-export const Header = ({ data, x, setX, api }) => {
+export const Header = ({ data, x, setX, api, loading }) => {
   return (
     <div className="media-df df jcsb">
       <header data-aos="fade-down" data-aos-duration="800">
         <h1 className="all_h1">
-          {data.name} <span className="span_color">{data.span}</span>
+          {data.name} <span className="span_color positions">{data.span}</span>
+          {loading ? (
+            <img src="./loading/load.svg" className="loading" alt="" />
+          ) : null}
         </h1>
         <p className="all_p">
           {data.des.slice(0, 62)} <br /> {data.des.slice(62, 122)} <br />{" "}
@@ -25,7 +28,9 @@ export const Header = ({ data, x, setX, api }) => {
             value={
               api?.filter((val) => {
                 return (
-                  val._fieldsProto.name.stringValue.toLowerCase().indexOf(x.trim().toLowerCase()) !== -1
+                  val._fieldsProto.name.stringValue
+                    .toLowerCase()
+                    .indexOf(x.trim().toLowerCase()) !== -1
                 );
               }).length
             }

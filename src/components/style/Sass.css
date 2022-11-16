@@ -133,7 +133,18 @@
 }
 
 .box {
-  text-align: center;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    border: 1px solid #be7b0000;
+    padding: 20px 30px;
+}
+
+.box:hover {
+    border-radius: 30px;
+    // background: #ED9902;
+    background: #be7b0016;
+    border: 1px solid #be7b003f;
+    transform: scale(1.1) translateY(-10px);
 }
 
 .box h3 {

@@ -38,6 +38,7 @@ const Home = () => {
   }, []);
   return (
     <>
+      <div className="margin-media"></div>
       <div className="web df aic jcsa fw mt-7 all_padding">
         <div className="web_col" data-aos="fade-left" data-aos-duration="800">
           <h1>
@@ -49,7 +50,10 @@ const Home = () => {
             <br /> IT ni o'rgana boshladim va 1-avgustda tamomladim.
             <br /> Hozirda UITC kompaniyasida stajyor man.
           </p>
-          <button className="btn" onClick={() => path("/portfolio")}>
+          <button
+            className="btn skew-forward"
+            onClick={() => path("/portfolio")}
+          >
             Qilgan ishlarim
           </button>
         </div>
@@ -63,7 +67,7 @@ const Home = () => {
           </div>
           <div className="images2">
             <LazyLoadImage
-              src="./img/personal.jpg"
+              src="./img/person.png"
               style={{ width: "500px", height: "500px", borderRadius: "50%" }}
               effect="blur"
               alt="Offline"

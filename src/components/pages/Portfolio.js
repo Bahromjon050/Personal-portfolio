@@ -159,7 +159,7 @@ const Portfolio = () => {
 
   const [loading, setLoading] = useState(true);
   const obj = {
-    span: `Portfolio  { ${!loading ? api.length : "_"} }`,
+    span: `Loyihalarim  { ${!loading ? api.length : "_"} }`,
     name: "Mening",
     des: `
     Rutrum cursus varius ullamcorper venenatis faucibus lobortis
@@ -187,6 +187,7 @@ const Portfolio = () => {
   }, []);
   return (
     <>
+      <div className="margin-media"></div>
       <section className="services media_service all_padding">
         <Header data={obj} setX={setX} x={x} api={api} loading={loading} />
         <div

@@ -204,7 +204,7 @@ button {
 
 .loading{
   top: -10px;
-  left: 353px;
+  right: 17px;
   position: absolute;
 }
 
@@ -288,6 +288,9 @@ button {
 }
 
 @media (max-width: 660px) {
+  .margin-media{
+    margin-top: 200px !important;
+}
   .nav_bar {
     position: relative;
   }

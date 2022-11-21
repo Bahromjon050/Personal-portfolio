@@ -24,7 +24,22 @@ const Navbar = () => {
         <nav className="nav_bar df aic jcsb">
           <div className="logo" onClick={() => setBtn(false)}>
             <NavLink to="/">
-              B. Sobitxanov<span>.</span>
+              <div class="load-6">
+                <div class="letter-holder">
+                  <div class="l-1 letter">B</div>
+                  <div class="l-2 letter">.</div>
+                  <div class="l-3 letter">S</div>
+                  <div class="l-4 letter">o</div>
+                  <div class="l-5 letter">b</div>
+                  <div class="l-6 letter">i</div>
+                  <div class="l-7 letter">t</div>
+                  <div class="l-8 letter">x</div>
+                  <div class="l-9 letter">a</div>
+                  <div class="l-10 letter">n</div>
+                  <div class="l-11 letter">o</div>
+                  <div class="l-12 letter">v</div>
+                </div>
+              </div>
             </NavLink>
           </div>
           <ul className={btn ? "nav_item activ" : "nav_item"}>
@@ -35,7 +50,7 @@ const Navbar = () => {
                 className="nav_link_a"
                 activclassname="selected"
               >
-                About
+                Men haqimda
               </NavLink>
             </li>
             <li className="nav_link">
@@ -55,7 +70,7 @@ const Navbar = () => {
                 className="nav_link_a"
                 activclassname="selected"
               >
-                Portfolio
+                Loyihalar
               </NavLink>
             </li>
             {/* <li onClick={() => setBtn(false)} className="nav_link">
@@ -70,7 +85,7 @@ const Navbar = () => {
                 className="nav_link_a"
                 activclassname="selected"
               >
-                Contact
+                Aloqa
               </NavLink>
             </li>
           </ul>

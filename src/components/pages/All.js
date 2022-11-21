@@ -5,10 +5,13 @@ export const Header = ({ data, x, setX, api, loading }) => {
     <div className="media-df df jcsb">
       <header data-aos="fade-down" data-aos-duration="800">
         <h1 className="all_h1">
-          {data.name} <span className="span_color positions">{data.span}</span>
-          {loading ? (
-            <img src="./loading/load.svg" className="loading" alt="" />
-          ) : null}
+          {data.name}{" "}
+          <span className="span_color positions">
+            {data.span}
+            {loading ? (
+              <img src="./loading/load.svg" className="loading" alt="" />
+            ) : null}
+          </span>
         </h1>
         <p className="all_p">
           {data.des.slice(0, 62)} <br /> {data.des.slice(62, 122)} <br />{" "}

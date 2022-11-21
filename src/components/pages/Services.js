@@ -309,12 +309,13 @@ const Services = () => {
   };
   return (
     <>
+      <div className="margin-media"></div>
       <section className="services all_padding">
         <Header data={obj} data-aos="fade-down" data-aos-duration="800" />
         <div className="cards g-3" data-aos="fade-up" data-aos-duration="800">
           {arr.map((val, i) => (
-            <div className="card df g-2" key={i}>
-              <div className="card_img">
+            <div className="card df g-2 card_svg_hovers" key={i}>
+              <div className="card_img card_svg_media">
                 {val.img}
                 {/* <LazyLoadImage src={val.img} effect="blur" /> */}
               </div>

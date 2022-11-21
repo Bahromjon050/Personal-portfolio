@@ -42,6 +42,7 @@ const MengaYozish = () => {
   };
   return (
     <>
+      <div className="margin-media"></div>
       <section className="services all_padding">
         <Header data={obj} />
 
@@ -88,7 +89,9 @@ const MengaYozish = () => {
         </div>
         <div className="cards_team" data-aos="fade-up" data-aos-duration="800">
           <form className="mt-2" onSubmit={handleSubmit(onSubmit)}>
-            <h3 className="all_h3 mt-3">Menga <span className="span_color">xabar qoldirish</span></h3>
+            <h3 className="all_h3 mt-3">
+              Menga <span className="span_color">xabar qoldirish</span>
+            </h3>
             <input
               type="text"
               {...register("fName", {
@@ -100,7 +103,7 @@ const MengaYozish = () => {
               }
             />
             {errors.fName ? (
-              <p className="errors">Please enter your first name</p>
+              <p className="errors">Iltimos, ismingizni kiriting</p>
             ) : null}
             <input
               type="text"
@@ -111,7 +114,7 @@ const MengaYozish = () => {
               }
             />
             {errors.email ? (
-              <p className="errors">Please enter your email</p>
+              <p className="errors">Iltimos, elektron pochtangizni kiriting</p>
             ) : null}
             <textarea
               className={
@@ -121,10 +124,13 @@ const MengaYozish = () => {
               placeholder="Enter Message"
             ></textarea>
             {errors.des ? (
-              <p className="errors">Please enter your message</p>
+              <p className="errors">Iltimos, xabaringizni kiriting</p>
             ) : null}
             <div>
-              <button className="btn" style={{ marginTop: "18px" }}>
+              <button
+                className="btn skew-forward"
+                style={{ marginTop: "18px" }}
+              >
                 Jo'natish
               </button>
             </div>

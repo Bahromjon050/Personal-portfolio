@@ -31,7 +31,7 @@ export const Header = ({ data, x, setX, api, loading }) => {
             value={
               api?.filter((val) => {
                 return (
-                  val._fieldsProto.name.stringValue
+                  val.name
                     .toLowerCase()
                     .indexOf(x.trim().toLowerCase()) !== -1
                 );
@@ -43,7 +43,7 @@ export const Header = ({ data, x, setX, api, loading }) => {
             type="text"
             style={{ borderRadius: "0 5px 5px 0" }}
             value={x}
-            placeholder="Search portfolio..."
+            placeholder="Loyihalarni izlash.."
             onChange={(e) => setX(e.target.value)}
           />
           {x ? <img src="./img/x.svg" onClick={() => setX("")} /> : null}

@@ -161,7 +161,7 @@ const Services = () => {
           />
         </svg>
       ),
-      name: "Redux, Redux Toolkit",
+      name: "React-redux, redux-toolkit",
       des: `Rutrum cursus varius ullamcorper venenatis faucibus lobortis
             turpis dignissim. Commodo pellentesque tristique aliquet turpis.
             Morbi risus imperdiet`,

@@ -68,7 +68,7 @@ const Home = () => {
           <div className="images2">
             <LazyLoadImage
               src="./img/person.png"
-              style={{ width: "500px", height: "500px", borderRadius: "50%" }}
+              style={{ width: "450px", height: "450px", borderRadius: "50%" }}
               effect="blur"
               alt="Offline"
             />
